@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.z1</groupId>
+    <artifactId>test-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  
+  <artifactId>test-core</artifactId>
+  <name>core</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  
+  <dependencies>
+  
+  	<!-- protostuff -->
+	<dependency>
+	    <groupId>com.dyuproject.protostuff</groupId>
+	    <artifactId>protostuff-core</artifactId>
+	    <version>1.1.6</version>
+	</dependency>
+	<dependency>
+		<groupId>com.dyuproject.protostuff</groupId>
+		<artifactId>protostuff-runtime</artifactId>
+		<version>1.1.6</version>
+	</dependency>
+	<!-- protostuff -->
+	
+    <!-- 国密算法 -->
+    <!--
+    	    非对称加密和签名：SM2
+    	    摘要签名算法：SM3
+    	    对称加密：SM4 
+     -->
+    <dependency>
+	    <groupId>org.bouncycastle</groupId>
+	    <artifactId>bcprov-jdk15on</artifactId>
+	    <version>1.68</version>
+	</dependency>
+    <!-- 国密算法 -->
+    
+    <!-- 中文获取首字母工具包 -->
+	<dependency>
+      <groupId>com.belerweb</groupId>
+      <artifactId>pinyin4j</artifactId>
+      <version>2.5.0</version>
+    </dependency>
+    <!-- 中文获取首字母工具包 -->
+  
+  </dependencies>
+  
+</project>

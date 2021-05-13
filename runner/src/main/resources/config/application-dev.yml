@@ -1,0 +1,28 @@
+server:
+  port: 9999
+
+# ===== Spring配置(数据源) ===== #
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.0.60:3306/runner?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    driver-class-name: org.apache.derby.jdbc.EmbeddedDriver
+#    url: jdbc:derby:data/runner;create=true
+#    username: 
+#    password: 
+  jackson:
+    default-property-inclusion: non-null
+
+# ===== Swagger配置 ===== #
+swagger:
+  enable: true
+
+# ===== Snowflake配置 ===== #
+snowflake: 
+  workerId: 0
+  centerId: 0
+

@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.z1.web.swagger.SwaggerConfiguration,\
+com.z1.web.cors.CorsConfiguration

@@ -1,0 +1,37 @@
+# ===== Tomcat配置 ===== #
+server:
+  tomcat: 
+    uri-encoding: UTF-8
+  servlet:
+    context-path: /runner
+
+# ===== Spring配置 ===== #
+spring:
+  application:
+    name: test-runner
+  http:
+    encoding: 
+      force: true
+      enable: true
+      charset: UTF-8
+    converters: 
+      perferred-json-mapper: gson
+  profiles:
+    active:
+    - ${use.profile}
+  main: 
+    allow-bean-definition-overriding: true
+  servlet: 
+    multipart: 
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+# ===== Swagger配置 ===== #
+swagger:
+  application-name: 测试Runner数据接口
+  application-version: 1.0
+  application-description: 测试Runner数据接口
+  apis-package: com.z1.runner.controller
+  try-host: http://localhost:${server.port}
+  contact-name: DeanHuang
+  contact-email: hudi-112@163.com
